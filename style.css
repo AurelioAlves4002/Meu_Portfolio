@@ -6,9 +6,19 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor01: #5766EF;
+    --cor02: #1F2133;
+    --cor03: #6871C5;
+    --cor04: #6B709B;
+}
+
 body {
-    background-color: #242533;
+    background-color: var(--cor02);
     height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .interface{
@@ -22,4 +32,39 @@ header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header a {
+    color: rgb(103, 103, 103);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: var(--cor01);
+    border-radius: 20px;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px var(--cor01);
 }
