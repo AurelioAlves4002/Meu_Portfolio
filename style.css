@@ -45,7 +45,17 @@ body {
 }
 
 header {
-    background-image:linear-gradient(to top, black,#050e8b);
+    background-image:linear-gradient(to top, black,#030746,#050e8b);
+}
+
+h2.titulo {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: var(--cor01);
 }
 /* Cabeçalho */
 
@@ -116,6 +126,7 @@ section.topo-do-site .flex{
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 3s ease-in-out infinite alternate;
+    border-radius: 160px;
 }
 
 @keyframes flutuar {
@@ -125,4 +136,51 @@ section.topo-do-site .flex{
     100%{
         top: 30px;
     }
+}
+
+/*Habilidades*/
+
+section.habilidades {
+    padding: 40px 4%;
+    display: flex;
+}
+
+section.habilidades .flex{
+    gap: 80px;
+}
+
+section.habilidades .habilidades-box {
+    color: white;
+    padding: 40px;
+    border: 2px solid transparent;
+    margin-top: 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+section.habilidades .habilidades-box:hover {
+    box-shadow: 0px 0px 8px rgba(245, 245, 245, 0.285);
+    transform: scale(1.05);
+}
+
+section.habilidades .habilidades-box i {
+    font-size: 4rem;
+}
+
+section.habilidades .habilidades-box i#html {
+    color: #ec6231;
+}
+
+section.habilidades .habilidades-box i#css {
+    color: #0818E5;
+}
+
+section.habilidades .habilidades-box i#js {
+    color: #FFD600;
+}
+
+section.habilidades .habilidades-box h3 {
+    font-size: 1.5rem;
+    margin: 20px 0px;
 }
